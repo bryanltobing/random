@@ -3,7 +3,7 @@ import caer
 
 img = cv.imread('./dataset/testing_images/bryan-1.jpg')
 resized = caer.resize(img, target_size=(400,400), preserve_aspect_ratio=True)
-cv.imshow('Group of 5 people', img)
+cv.imshow('Detected Faces', img)
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray People', gray)
